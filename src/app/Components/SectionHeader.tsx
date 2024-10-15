@@ -1,30 +1,18 @@
-import React from "react";
+import React from 'react'
 
 interface SectionHeaderProps {
-  headerText: string;
-  linOnTop?: boolean;
+  title: string
+  subTitle?: string
 }
 
 const SectionHeader = (props: SectionHeaderProps) => {
-  const { headerText, linOnTop = false } = props;
+  const { title, subTitle } = props
   return (
-    <>
-      {!linOnTop ? (
-        <div className="flex items-center gap-3">
-          <p className="font-extrabold text-2xl text-[#262626]">
-            {" "}
-            {headerText}
-          </p>
-          <div className="border-t border-[#262626] w-[30%]"></div>
-        </div>
-      ) : (
-        <div>
-          <div className="border-t-[3px] border-[#262626] w-[20%] mb-1"></div>
-          <p className="font-[900] text-2xl text-[#262626]">{headerText}</p>
-        </div>
-      )}
-    </>
-  );
-};
+    <div>
+      <p className='text-xl textColorSecondary'>{title}</p>
+      <p className='text-7xl'>{subTitle}</p>
+    </div>
+  )
+}
 
-export default SectionHeader;
+export default SectionHeader
