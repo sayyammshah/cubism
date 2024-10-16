@@ -1,97 +1,88 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image'
+import React from 'react'
+import SectionHeader from './SectionHeader'
+import Divider from './Divider'
 
 const profileSpecs = [
   {
-    ic: "/client_satisfaction.svg",
-    heading: "Client Satisfaction",
-    description: "Over 100% of my clients have rated my services with 5.",
+    ic: '/client_satisfaction.svg',
+    heading: 'Client Satisfaction',
+    description: 'Over 100% of my clients have rated my services with 5.',
   },
   {
-    ic: "/areas.svg",
-    heading: "Specialized areas:",
+    ic: '/areas.svg',
+    heading: 'Specialized areas:',
     description:
-      "I specialize in modern design, minimalist aesthetics, or sustainable living.",
+      'I specialize in modern design, minimalist aesthetics, or sustainable living.',
   },
   {
-    ic: "/awards.svg",
-    heading: "Awards or certifications:",
+    ic: '/awards.svg',
+    heading: 'Awards or certifications:',
     description:
-      "I am a certified [certification name] and have been recognized with [award name] for my contributions to the field of interior design.",
+      'I am a certified [certification name] and have been recognized with [award name] for my contributions to the field of interior design.',
   },
-];
+]
+const acehivements = [
+  {
+    id: 'acehivement_1',
+    title: '3+',
+    description: 'Years of experience',
+  },
+  {
+    id: 'acehivement_2',
+    title: '10+',
+    description: 'Happy Clients',
+  },
+  {
+    id: 'acehivement_3',
+    title: '5+',
+    description: 'Ongoing Sites',
+  },
+]
 
 const OwnedBy = () => {
   return (
-    <>
-      <div className="my-10 flex justify-between items-stretch gap-16">
-        <div className="relative overflow-hidden h-full">
+    <section className='about flexCenter textColorDark sectionMargin'>
+      <div className='sectionContainer'>
+        <SectionHeader title='Who am I?' subTitle='Expertise You Can Trust' />
+        <div className='md:flex gap-10'>
           <Image
-            src={"/profile.svg"}
-            width={400}
-            height={600}
-            alt={"profile_photo"}
-            objectFit="cover"
+            src={'/Profile_Rounded.svg'}
+            alt='profile_img'
+            width={300}
+            height={1023.5}
           />
-          <div
-            className={
-              "absolute inset-0 bg-gradient-to-t from-black to-transparent flex justify-start items-end pb-5 ps-5 text-[#F5F5F5] text-sm"
-            }
-          >
-            <span className="flex flex-col">
-              <p className="text-[11px]">Principal Designer</p>
-              <div className="border-t-[1.2px] w-[50%] border-[#F5F5F5] my-1"></div>
-              <p className="text-sm font-medium">Sayyami Shah</p>
-              <p className="text-[11px] mt-1">B.Des in Interior Design</p>
-            </span>
-          </div>
-        </div>
-
-        <div>
-          {/* <p className="text-sm font-bold">{`I'm Sayyami Shah`}</p> */}
-          <p className="text-sm">
-            {`I'm a dedicated interior designer with 4 years of experience
-            transforming spaces into personalized havens. Passionate about
-            creating functional and aesthetically pleasing environments, I
-            collaborate closely with clients to understand their unique vision
-            and bring it to life.`}
-          </p>
-          <span className="flex gap-2 items-stretch my-5">
-            {profileSpecs.map((item, idx) => {
-              return (
-                <div key={idx + 1}>
-                  <span className="flex gap-1 items-center">
-                    <Image
-                      src={item.ic}
-                      width={18}
-                      height={18}
-                      alt={`${item.ic}_icon`}
-                    />
-                    <p className="font-bold text-sm">{item.heading}</p>
-                  </span>
-                  <p className="text-sm pl-5">{item.description}</p>
-                </div>
-              );
-            })}
-          </span>
-          <div className="border-t-[1.2px] border-[#262626] mt-10 mb-5"></div>
-          <div className="flex gap-3">
-            <div className="border-l-2 border-[#262626]"></div>
-            <div className="italic">
-              <p className="text-sm font-bold">Design Your Dream Home</p>
-              <p className="text-sm">
-                We work with homeowners or partner with architects, custom home
-                builders, and artisans to explore and discover meaningful
-                solutions. Ultimately, our goal is to exceed our clients ’
-                expectations by providing environments that reflect their values
-                and meet their needs well into the future.
+          <div>
+            <div className='mt-5'>
+              <p className='text-2xl font-bold'>Sayyami Shah</p>
+              <p> Interior Designer</p>
+            </div>
+            <span className='textColorSecondary'>
+              <p>
+                a passionate interior designer, we specialize in creating
+                beautiful, functional spaces that reflect your unique style.
+                With an eye for detail and a commitment to quality, transforms
+                homes and commercial spaces into inspiring environments. Let us
+                bring your vision to life with personalized designs that enhance
+                your lifestyle and elevate your surroundings.
               </p>
+            </span>
+            <Divider isSecondary />
+            <div className='mt-5 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-0'>
+              {acehivements.map((item, idx) => {
+                return (
+                  <div key={item.id}>
+                    <p className='text-3xl'>{item.title}</p>
+                    <p className='textColorSecondary'>{item.description}</p>
+                  </div>
+                )
+              })}
             </div>
           </div>
         </div>
       </div>
-    </>
-  );
-};
+    </section>
+  )
+}
 
-export default OwnedBy;
+export default OwnedBy

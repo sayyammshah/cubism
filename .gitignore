@@ -1,3 +1,16 @@
-node_modules
+# Next.js specific
 .next
+.next/cache
+.next/server
+.next/static
+
+# Build files
+build/
+
+# Editor-specific files
+.DS_Store
+.vscode/
+.idea/
+.git/
+node_modules
 next-env.d.ts

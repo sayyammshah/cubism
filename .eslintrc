@@ -1,0 +1,25 @@
+{
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:next/core-web-vitals",
+      "prettier"
+    ],
+    "plugins": [
+      "@typescript-eslint",
+      "next",
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error",
+      "@typescript-eslint/no-unused-vars": "error",
+      "@typescript-eslint/no-empty-function": "error",
+      "@typescript-eslint/no-explicit-any": "error",
+      "@typescript-eslint/no-non-null-assertion": "error",
+      "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/prop-types": "off",
+      "next/no-html-attributes-for-images": "off"
+    }
+  }

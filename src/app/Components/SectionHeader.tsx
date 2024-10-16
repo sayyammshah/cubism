@@ -1,30 +1,32 @@
-import React from "react";
+import Image from 'next/image'
+import React from 'react'
 
 interface SectionHeaderProps {
-  headerText: string;
-  linOnTop?: boolean;
+  title: string
+  subTitle?: string
+  applyMaxWidth?: boolean
 }
 
 const SectionHeader = (props: SectionHeaderProps) => {
-  const { headerText, linOnTop = false } = props;
+  const { title, subTitle, applyMaxWidth = false } = props
   return (
-    <>
-      {!linOnTop ? (
-        <div className="flex items-center gap-3">
-          <p className="font-extrabold text-2xl text-[#262626]">
-            {" "}
-            {headerText}
-          </p>
-          <div className="border-t border-[#262626] w-[30%]"></div>
-        </div>
-      ) : (
-        <div>
-          <div className="border-t-[3px] border-[#262626] w-[20%] mb-1"></div>
-          <p className="font-[900] text-2xl text-[#262626]">{headerText}</p>
-        </div>
-      )}
-    </>
-  );
-};
+    <div className='mb-10 md:mb-16'>
+      <p className='text-lg md:text-xl textColorSecondary'>{title}</p>
+      <p
+        className={`sectionHeaderTextSize smooth ${
+          applyMaxWidth ? `md:max-w-[40%]` : `max-w-fit`
+        }`}>
+        {subTitle}
+        <div className='mt-[5px]'></div>
+        <Image
+          src={'/underlineGreen.svg'}
+          width={100}
+          height={20}
+          alt='underline_img'
+        />
+      </p>
+    </div>
+  )
+}
 
-export default SectionHeader;
+export default SectionHeader
