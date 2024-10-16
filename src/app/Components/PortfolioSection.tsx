@@ -55,21 +55,19 @@ const Portfolio = () => {
   return (
     <section className='about flexCenter textColorDark sectionMargin'>
       <div className='sectionContainer'>
-        <div className='flexCenter gap-20'>
-          <span>
-            <SectionHeader title='Portfolio' subTitle='View our projects' />
-          </span>
+        <SectionHeader title='Portfolio' subTitle='View our projects' />
+        {/* <div className='md:flexBetwn gap-20'>
           <p className='text-3xl textColorSecondary md:w-[50%] mt-10 md:mt-0'>
             Explore our unique and customised interior design solution tailored
             to fit individual style
           </p>
-        </div>
-        <div className='mt-16 responsiveGrid'>
+        </div> */}
+        <div className='responsiveGrid'>
           {portfolioImgs.map((item, idx) => {
             return (
               <div
                 key={item.id}
-                className='border-2 p-5 hover:shadow-2xl hover:border-none'>
+                className='border-2 md:border-none p-5 hover:shadow-2xl hover:bg-white hover:border-none smooth'>
                 <Image
                   src={item.srcStr}
                   alt={item.altTxt}
@@ -77,7 +75,9 @@ const Portfolio = () => {
                   height={600}
                 />
                 <div className='mt-5'>
-                  <p className='text-2xl font-bold'>{item.titleCaption}</p>
+                  <p className='text-lg md:text-2xl font-bold'>
+                    {item.titleCaption}
+                  </p>
                   <p className='textColorSecondary text-lg'>{item.caption}</p>
                 </div>
               </div>

@@ -34,26 +34,6 @@ const Header = () => {
           <Image src={logo} alt='logo' width={22} height={22} />
           <p className='text-lg font-bold'>CUBISM</p>
         </div>
-        <div className='navBar'>
-          <ul className='flex items-center gap-7'>
-            {navBarMetaData.map((item, idx) => {
-              return (
-                <li key={item.key} className='navBarItem'>
-                  <Link href={item.redirectTo}>{item.label}</Link>
-                </li>
-              )
-            })}
-          </ul>
-        </div>
-        <div className='flexCenter gap-2'>
-          <Image
-            src={'/whatsapp.svg'}
-            width={18}
-            height={18}
-            alt='whatsapp_ic'
-          />
-          <p>+91 9876543210</p>
-        </div>
       </section>
     </>
   )

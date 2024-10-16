@@ -10,13 +10,14 @@ const About = () => {
     <>
       <section className='about flexCenter sectionMargin textColorDark'>
         <div className='sectionContainer'>
-          <div className='md:flex gap-5'>
+          <SectionHeader
+            title='About Us'
+            subTitle='Discover the power of design'
+            applyMaxWidth
+          />
+          <div className='md:flex items-start gap-5'>
             <div className='md:max-w-[50%]'>
-              <SectionHeader
-                title='About Us'
-                subTitle='Discover the power of design'
-              />
-              <ul className='mt-3'>
+              <ul>
                 {AboutUs.map((item, idx) => {
                   return (
                     <li className='textColorSecondary' key={idx + 1}>
@@ -35,7 +36,7 @@ const About = () => {
                 entire design process.
               </p>
             </div>
-            <div className='flex justify-center gap-1 mt-10'>
+            <div className='flex justify-center gap-1 mt-5 md:mt-0'>
               {AboutUsImages.map((item, idx) => {
                 return (
                   <span

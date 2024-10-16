@@ -10,11 +10,11 @@ const heroContent = {
 const HeroSection = () => {
   return (
     <>
-      <section className='homepage setBg flexCenter textColorLight'>
+      <section className='homepage setBg flexCenter textColorLight w-full'>
         <div className='container'>
           <Header />
-          <div className='flex flex-col gap-4'>
-            <p className='text-6xl font-bold'>
+          <div className='flex flex-col gap-5'>
+            <p className='heroTextSize smooth font-bold'>
               Beautify and Enhance your space <br /> with our expertise
             </p>
             <Divider />
@@ -23,6 +23,16 @@ const HeroSection = () => {
               <br />
               that insipres and enriches your life
             </p>
+            <div className='flex gap-2'>
+              <Image
+                src={'/whatsapp.svg'}
+                width={18}
+                height={18}
+                alt='whatsapp_ic'
+              />
+              <p>Get your Quote:</p>
+              <p>+91 9876543210</p>
+            </div>
           </div>
           <div className='flexCenter gap-2'>
             <p>Explore</p>
@@ -31,6 +41,7 @@ const HeroSection = () => {
               alt='double arrow down'
               width={24}
               height={24}
+              className='animate-bounce-up-down'
             />
           </div>
         </div>

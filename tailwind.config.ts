@@ -11,8 +11,15 @@ const config: Config = {
       fontSize: {},
       backgroundImage: {
         'heroSectionBackground': "url('/heroSectionBackground.svg')",
-        'servicesSectionBanner': "url('/servicesSectionBanner.svg')",
-        'profile-bg': "url('/profile.svg"
+      },
+      animation: {
+        'bounce-up-down': 'bounceUpDown 1s ease-in-out infinite',
+      },
+      keyframes: {
+        bounceUpDown: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
       },
     },
   },

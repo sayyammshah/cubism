@@ -45,7 +45,7 @@ const OwnedBy = () => {
     <section className='about flexCenter textColorDark sectionMargin'>
       <div className='sectionContainer'>
         <SectionHeader title='Who am I?' subTitle='Expertise You Can Trust' />
-        <div className='mt-10 md:flex gap-10'>
+        <div className='md:flex gap-10'>
           <Image
             src={'/Profile_Rounded.svg'}
             alt='profile_img'
@@ -68,7 +68,7 @@ const OwnedBy = () => {
               </p>
             </span>
             <Divider isSecondary />
-            <div className='mt-5 responsiveGrid'>
+            <div className='mt-5 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-0'>
               {acehivements.map((item, idx) => {
                 return (
                   <div key={item.id}>

@@ -9,7 +9,8 @@
 }
 
 body{
-  background-color:#F7F7F7
+  background-color:#F7F7F7;
+  overflow-x: hidden
 }
 
 /* Generic classes */
@@ -22,15 +23,26 @@ body{
 }
 
 .sectionContainer{
-  @apply max-w-screen-xl p-10 flex justify-center flex-col;
+  @apply w-full max-w-screen-xl p-10 flex justify-start flex-col;
 }
 
 .sectionMargin{
-  @apply my-28
+  @apply md:my-20
+}
+
+.smooth{
+  @apply transition-all duration-500 ease-in-out
+}
+
+.sectionHeaderTextSize{
+  @apply text-3xl sm:text-4xl md:text-5xl
 }
 
 /* Flex Classes */
 .flexCenter{
+  @apply flex items-center justify-center;
+}
+.adaptiveFlexCenter{
   @apply md:flex items-center justify-center;
 }
 .flexBetwn{
@@ -38,7 +50,7 @@ body{
 }
 
 .responsiveGrid {
-  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-0
 }
 
 .textColorLight{
@@ -56,4 +68,7 @@ body{
 /* Hero Section Classes */
 .setBg{
   @apply bg-heroSectionBackground bg-cover bg-center
+}
+.heroTextSize{
+  @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl
 }
