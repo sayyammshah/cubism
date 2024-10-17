@@ -16,12 +16,12 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    // Simulate a loading delay (e.g., fetching data)
+    console.log('Cubism VersionV1')
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 2000) // Adjust the delay as needed
+    }, 2000)
 
-    return () => clearTimeout(timer) // Cleanup timer
+    return () => clearTimeout(timer)
   }, [])
 
   if (isLoading) {
