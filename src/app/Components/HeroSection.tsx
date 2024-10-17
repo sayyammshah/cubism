@@ -31,7 +31,7 @@ const HeroSection = () => {
                 alt='whatsapp_ic'
               />
               <p>Get your Quote:</p>
-              <p>+91 9876543210</p>
+              <p>+91 9028976883</p>
             </div>
           </div>
           <div className='flexCenter gap-2'>

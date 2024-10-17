@@ -25,7 +25,7 @@ const Contact = () => {
                 height={18}
                 alt='whatsapp_ic'
               />
-              <p>+91 9876543210</p>
+              <p>+91 9028976883</p>
             </div>
             <Divider isSecondary />
             <p className='smooth text-xl md:text-2xl'>

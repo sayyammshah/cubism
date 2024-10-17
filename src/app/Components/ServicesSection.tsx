@@ -9,31 +9,31 @@ const services = [
     id: '01',
     title: 'Consultation',
     description:
-      'A Consultation with an Interior Designer to discuss design ideas, budget & project scope',
+      'I provide personalized consultations to understand your vision and guide you through the design process, ensuring your space truly reflects your unique style.',
   },
   {
     id: '02',
     title: 'Layout Design',
     description:
-      'Layout Design: A Consultation with an Interior Designer to discuss design ideas, budget & project scope',
+      'I create functional and aesthetically pleasing layouts that optimize your space, balancing style and practicality for a seamless flow and comfort.',
   },
   {
     id: '03',
     title: 'Concept Sketches',
     description:
-      'Concept Sketches: A Consultation with an Interior Designer to discuss design ideas, budget & project scope',
+      'My hand-drawn concept sketches bring your ideas to life, offering a visual representation of your design vision before we move into execution.',
   },
   {
     id: '04',
     title: '3D Rendering',
     description:
-      '3D Rendering: A Consultation with an Interior Designer to discuss design ideas, budget & project scope',
+      'Experience your space like never before with my realistic 3D renderings, allowing you to visualize every detail and make informed design choices.',
   },
   {
     id: '05',
     title: 'Artwork Installation',
     description:
-      'Artwork Installation: A Consultation with an Interior Designer to discuss design ideas, budget & project scope',
+      'I specialize in expertly installing artwork that complements your design, enhancing the atmosphere and adding a personal touch to your space.',
   },
 ]
 

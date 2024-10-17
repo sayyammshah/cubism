@@ -39,15 +39,17 @@ const portfolioImgs = [
     id: 'portfolioImg_5',
     srcStr: '/portfolio5.svg',
     altTxt: 'portfolioImg_5_image',
-    titleCaption: 'Portfolio Caption Title 5',
-    caption: 'Portfolio Caption 5',
+    titleCaption: 'A Functional Kitchen Oasis',
+    caption:
+      'This kitchen combines modern elegance with practicality, featuring custom cabinetry',
   },
   {
     id: 'portfolioImg_6',
     srcStr: '/portfolio6.svg',
     altTxt: 'portfolioImg_6_image',
-    titleCaption: 'Portfolio Caption Title 6',
-    caption: 'Portfolio Caption 6',
+    titleCaption: 'The Perfect Kids Room',
+    caption:
+      'This kids room features vibrant colors and playful decor, offering a fun space for both play and relaxation.',
   },
 ]
 
