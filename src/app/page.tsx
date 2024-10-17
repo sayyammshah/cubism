@@ -10,6 +10,7 @@ import Contact from './Components/Contact'
 import Footer from './Components/Footer'
 import { useEffect, useState } from 'react'
 import Loading from './Components/Loading'
+import { Analytics } from '@vercel/analytics/react'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
@@ -29,6 +30,7 @@ export default function Home() {
 
   return (
     <main className='min-h-screen baseWidth'>
+      <Analytics />
       <HeroSection />
       <About />
       <Services />
