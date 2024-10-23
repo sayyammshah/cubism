@@ -7,31 +7,31 @@ const portfolioImgs = [
     id: 'portfolioImg_1',
     srcStr: '/portfolio1.svg',
     altTxt: 'portfolioImg_1_image',
-    titleCaption: 'Comfy Library',
+    titleCaption: 'Reception Area',
     caption:
-      'We create a cozy and inviting space designed for reading studying and relaxation',
+      'We create a welcoming and stylish reception area designed for seamless connections and memorable first impressions.',
   },
   {
     id: 'portfolioImg_2',
     srcStr: '/portfolio2.svg',
     altTxt: 'portfolioImg_2_image',
-    titleCaption: 'Workspace',
+    titleCaption: 'Comfort Dining',
     caption:
-      'A Productive environment by choosing furnitureand lightining that enhance positivity',
+      'We create a warm and inviting dining area designed for shared meals, laughter, and cherished moments.',
   },
   {
     id: 'portfolioImg_3',
     srcStr: '/portfolio3.svg',
     altTxt: 'portfolioImg_3_image',
-    titleCaption: 'Space Cafe',
+    titleCaption: 'Cozy Bedroom',
     caption:
-      'A Comfortable seating and soft lightining that create a cozy a cozy nd inviting atmosphere',
+      'We create a serene and cozy bedroom designed for restful nights, peaceful moments, and personal retreats.',
   },
   {
     id: 'portfolioImg_4',
     srcStr: '/portfolio4.svg',
     altTxt: 'portfolioImg_4_image',
-    titleCaption: 'Cozy Living Room',
+    titleCaption: 'Living Room',
     caption:
       'A cozy living room s a warm nd inivting space hat makes ou feel relaxed and comfortable',
   },
@@ -39,15 +39,17 @@ const portfolioImgs = [
     id: 'portfolioImg_5',
     srcStr: '/portfolio5.svg',
     altTxt: 'portfolioImg_5_image',
-    titleCaption: 'Portfolio Caption Title 5',
-    caption: 'Portfolio Caption 5',
+    titleCaption: 'A Functional Kitchen Oasis',
+    caption:
+      'This kitchen combines modern elegance with practicality, featuring custom cabinetry',
   },
   {
     id: 'portfolioImg_6',
     srcStr: '/portfolio6.svg',
     altTxt: 'portfolioImg_6_image',
-    titleCaption: 'Portfolio Caption Title 6',
-    caption: 'Portfolio Caption 6',
+    titleCaption: 'The Perfect Kids Room',
+    caption:
+      'This kids room features vibrant colors and playful decor, offering a fun space for both play and relaxation.',
   },
 ]
 

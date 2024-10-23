@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import SectionHeader from './SectionHeader'
 import Divider from './Divider'
 
 const Contact = () => {
@@ -10,8 +9,8 @@ const Contact = () => {
           <Image
             src={'/contactBanner.svg'}
             alt='contact_banner'
-            width={400}
-            height={600}
+            width={300}
+            height={500}
           />
           <div className='mt-5 md:mt-0'>
             <p className='text-lg md:text-xl textColorSecondary mb-5'>
