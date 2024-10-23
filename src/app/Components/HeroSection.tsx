@@ -2,6 +2,8 @@ import React from 'react'
 import Divider from './Divider'
 import Image from 'next/image'
 import Header from './Header'
+import Link from 'next/link'
+import { CONTENT } from '../Content'
 
 const heroContent = {
   title: 'Beautify and Enhance your space',
@@ -23,16 +25,19 @@ const HeroSection = () => {
               <br />
               that insipres and enriches your life
             </p>
-            <div className='flex gap-2'>
+            <Link
+              href={CONTENT.waLink}
+              target='_blank'
+              className='flex gap-2 p-3 w-fit rounded-sm cursor-pointer hover:shadow-2xl bg-zinc-500'>
               <Image
                 src={'/whatsapp.svg'}
                 width={18}
                 height={18}
                 alt='whatsapp_ic'
               />
-              <p>Get your Quote:</p>
-              <p>+91 9876543210</p>
-            </div>
+              <p>Get your Quote</p>
+              {/* <p>+91 9876543210</p> */}
+            </Link>
           </div>
           <div className='flexCenter gap-2'>
             <p>Explore</p>
