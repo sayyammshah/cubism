@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Divider from './Divider'
+import Link from 'next/link'
+import { CONTENT } from '../Content'
 
 const Contact = () => {
   return (
@@ -17,20 +19,23 @@ const Contact = () => {
               Let's work together & we'll help you by our best interior design
             </p>
             <Divider isSecondary />
-            <div className='flex gap-2 mb-5'>
-              <Image
-                src={'/whatsappBlack.svg'}
-                width={18}
-                height={18}
-                alt='whatsapp_ic'
-              />
-              <p>+91 9876543210</p>
-            </div>
-            <Divider isSecondary />
             <p className='smooth text-xl md:text-2xl'>
               Chat with us on WhatsApp and let’s transform your interiors into
               something extraordinary!
             </p>
+            <Link
+              href={CONTENT.waLink}
+              target='_blank'
+              className='flex gap-2 mt-10 w-fit p-3 rounded-sm cursor-pointer bg-[#282828] textColorLight'>
+              <Image
+                src={'/whatsapp.svg'}
+                width={18}
+                height={18}
+                alt='whatsapp_ic'
+              />
+              <p>Reach Out to Us</p>
+              {/* <p>+91 9876543210</p> */}
+            </Link>
           </div>
         </div>
       </div>
