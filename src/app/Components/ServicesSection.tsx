@@ -9,31 +9,31 @@ const services = [
     id: '01',
     title: 'Consultation',
     description:
-      'A Consultation with an Interior Designer to discuss design ideas, budget & project scope',
+      'Our consultation services provide tailored support to enhance your interiors, optimize your Space with unique styles.',
   },
   {
     id: '02',
     title: 'Layout Design',
     description:
-      'Layout Design: A Consultation with an Interior Designer to discuss design ideas, budget & project scope',
+      'We analyze your needs and preferences to create customized floor plans that maximize usability while ensuring aesthetic appeal.',
   },
   {
     id: '03',
     title: 'Concept Sketches',
     description:
-      'Concept Sketches: A Consultation with an Interior Designer to discuss design ideas, budget & project scope',
+      'We create detailed sketches that illustrate layout, color schemes, & key elements, helping you visualize the final outcome.',
   },
   {
     id: '04',
     title: '3D Rendering',
     description:
-      '3D Rendering: A Consultation with an Interior Designer to discuss design ideas, budget & project scope',
+      'We create realistic images that showcase colors, and spatial relationships, allowing you to experience your space before it’s built.',
   },
   {
     id: '05',
     title: 'Artwork Installation',
     description:
-      'Artwork Installation: A Consultation with an Interior Designer to discuss design ideas, budget & project scope',
+      'We work closely with you to select pieces that reflect your style and vision, ensuring thoughtful placement for maximum impact.',
   },
 ]
 
@@ -74,7 +74,7 @@ const Services = () => {
                   <p className='block md:hidden'>
                     {isClicked.id === service.id && isClicked.description}
                   </p>
-                  <Divider isSecondary />
+                  {idx !== services.length - 1 && <Divider isSecondary />}
                 </>
               )
             })}
