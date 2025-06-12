@@ -54,7 +54,7 @@ const ServicesSection = () => {
               <p className='text-cormorant_unicase text-4xl text-[#808080] leading-none'>
                 {id}
               </p>
-              <p>{title}</p>
+              <p className='font-bold'>{title}</p>
             </div>
           )
         })}

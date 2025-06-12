@@ -62,12 +62,12 @@ const visualisationsImages = [
 
 const VisualisationSection = () => {
   return (
-    <section className='mt-20 min-h-screen'>
+    <section className='mt-20'>
       <p className='text-cormorant_unicase md:text-4xl text-2xl'>
         3D Visualisations
       </p>
 
-      <div className='columns-2 gap-2 mt-5'>
+      <div className='columns-1 sm:columns-2 gap-2 mt-5'>
         {visualisationsImages.map(({ id, src, width, height, altTxt }) => (
           <div
             key={id}
