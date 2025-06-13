@@ -8,67 +8,41 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-body{
-  background-color:#F7F7F7;
-  overflow-x: hidden
+body {
+  background-color: #f4f3ee;
+  color: #282828;
+  font-family: var(--font-cormorant);
+  overflow-x: hidden;
+  align-content: center;
 }
 
-/* Generic classes */
-.baseWidth > * {
-  @apply w-full /* Set width for all direct child elements */
+/* Fonts */
+.text-tangerine {
+  font-family: var(--font-tangerine), cursive;
 }
 
-.container{
-  @apply max-w-screen-xl p-10 h-screen flex justify-between flex-col;
+.text-cormorant {
+  font-family: var(--font-cormorant), cursive;
 }
 
-.sectionContainer{
-  @apply w-full max-w-screen-xl p-10 flex justify-start flex-col;
+.text-cormorant_unicase {
+  font-family: var(--font-cormorant_unicase), cursive;
 }
 
-.sectionMargin{
-  @apply md:my-20
+.text-raeenie_beanie {
+  font-family: var(--font-raeenie_beanie), cursive;
 }
 
-.smooth{
-  @apply transition-all duration-500 ease-in-out
+/* Generic */
+.shadow_generic {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.sectionHeaderTextSize{
-  @apply text-3xl sm:text-4xl md:text-5xl
-}
-
-/* Flex Classes */
-.flexCenter{
-  @apply flex items-center justify-center;
-}
-.adaptiveFlexCenter{
-  @apply md:flex items-center justify-center;
-}
-.flexBetwn{
-  @apply flex justify-between;
-}
-
-.responsiveGrid {
-  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-0
-}
-
-.textColorLight{
-  @apply text-[#F7F7F7]
-}
-
-.textColorDark{
-  @apply text-[#282828]
-}
-
-.textColorSecondary{
-  @apply text-[#878787]
-}
-
-/* Hero Section Classes */
-.setBg{
-  @apply bg-heroSectionBackground bg-cover bg-center
-}
-.heroTextSize{
-  @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }

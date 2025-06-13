@@ -1,9 +1,38 @@
 import type { Metadata } from 'next'
-import { Inter, Afacad } from 'next/font/google'
+import {
+  Tangerine,
+  Cormorant,
+  Cormorant_Unicase,
+  Reenie_Beanie,
+} from 'next/font/google'
 import './globals.css'
-import Footer from './Components/Footer'
 
-const inter = Afacad({ subsets: ['latin'], weight: '400' })
+const tangerine = Tangerine({
+  subsets: ['latin'],
+  weight: '400',
+  style: 'normal',
+  variable: '--font-tangerine',
+})
+const cormorant = Cormorant({
+  subsets: ['latin'],
+  weight: '400',
+  style: 'normal',
+  variable: '--font-cormorant',
+})
+
+const cormorantUnicase = Cormorant_Unicase({
+  subsets: ['latin'],
+  weight: '400',
+  style: 'normal',
+  variable: '--font-cormorant_unicase',
+})
+
+const raeeniebeanie = Reenie_Beanie({
+  subsets: ['latin'],
+  weight: '400',
+  style: 'normal',
+  variable: '--font-raeenie_beanie',
+})
 
 export const metadata: Metadata = {
   title: 'Cubism',
@@ -17,7 +46,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${inter.className} text-[#282828]`}>{children}</body>
+      <body
+        className={`${tangerine.variable} ${cormorant.variable} ${cormorantUnicase.variable} ${raeeniebeanie.variable}`}>
+        {children}
+      </body>
     </html>
   )
 }
