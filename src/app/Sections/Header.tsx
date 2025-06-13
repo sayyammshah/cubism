@@ -2,6 +2,8 @@ import React from 'react'
 import Logo from './Logo'
 import { ArrowRightIcon } from 'lucide-react'
 import { Separator } from '@/components/ui/separator'
+import Link from 'next/link'
+import { WA_LINK } from '@/lib/constants'
 
 const Header = () => {
   const arrowSrc = '/arrow.svg'
@@ -11,7 +13,9 @@ const Header = () => {
       <div className='flex items-center justify-between'>
         <Logo />
         <div className='flex gap-1'>
-          <p className='underline cursor-pointer'>Book a Call </p>
+          <Link href={WA_LINK} target='_blank'>
+            <p className='underline cursor-pointer'>Book a Call </p>
+          </Link>
           <ArrowRightIcon width={18} />
         </div>
       </div>

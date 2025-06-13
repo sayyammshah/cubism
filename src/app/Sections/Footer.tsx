@@ -1,6 +1,8 @@
 import { Separator } from '@/components/ui/separator'
 import Image from 'next/image'
 import Logo from './Logo'
+import { WA_LINK } from '@/lib/constants'
+import Link from 'next/link'
 
 const contactProfiles = [
   {
@@ -19,7 +21,7 @@ const contactProfiles = [
     id: 3,
     title: 'Chat with us',
     text: 'Whatsapp',
-    link: '',
+    link: WA_LINK,
   },
   {
     id: 4,
@@ -42,15 +44,17 @@ const Footer = () => {
             <div className='md:flex items-start mt-3 w-full'>
               {contactProfiles.map(({ id, title, text, link }) => {
                 return (
-                  <p className='mt-5 md:mt-0 flex-grow' key={id}>
-                    <span className='block'>{title}</span>
-                    <span
-                      className={`block underline  ${
-                        id !== 1 && 'cursor-pointer'
-                      }`}>
-                      {text}
-                    </span>
-                  </p>
+                  <Link href={link} className='mt-5 md:mt-0 flex-grow'>
+                    <p key={id}>
+                      <span className='block'>{title}</span>
+                      <span
+                        className={`block underline  ${
+                          id !== 1 && 'cursor-pointer'
+                        }`}>
+                        {text}
+                      </span>
+                    </p>
+                  </Link>
                 )
               })}
             </div>
