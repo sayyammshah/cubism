@@ -7,7 +7,7 @@ import Link from 'next/link'
 const contactProfiles = [
   {
     id: 1,
-    title: 'Based out of nashik',
+    title: 'Based out of',
     text: 'Nashik',
     link: '',
   },
