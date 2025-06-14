@@ -17,7 +17,7 @@ const HeroSection = () => {
             </div>
             <div className='bg-[#FFFFFF] p-5 text-center'>
               <p className='text-tangerine text-4xl'>
-                "Designs the live with you"
+                "Designs that live with you"
               </p>
             </div>
           </div>
