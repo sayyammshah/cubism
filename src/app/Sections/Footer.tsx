@@ -1,7 +1,7 @@
 import { Separator } from '@/components/ui/separator'
 import Image from 'next/image'
 import Logo from './Logo'
-import { WA_LINK } from '@/lib/constants'
+import { EMAIL_LINK, INSTA_LINK, WA_LINK } from '@/lib/constants'
 import Link from 'next/link'
 
 const contactProfiles = [
@@ -15,7 +15,7 @@ const contactProfiles = [
     id: 2,
     title: 'Email us on',
     text: 'cubisminteriors@gmail.com',
-    link: '',
+    link: EMAIL_LINK,
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const contactProfiles = [
     id: 4,
     title: 'Follow on Instagram',
     text: '@cubism_theinteriordesignstudio',
-    link: '',
+    link: INSTA_LINK,
   },
 ]
 
@@ -44,7 +44,10 @@ const Footer = () => {
             <div className='md:flex items-start mt-3 w-full'>
               {contactProfiles.map(({ id, title, text, link }) => {
                 return (
-                  <Link href={link} className='mt-5 md:mt-0 flex-grow'>
+                  <Link
+                    href={link}
+                    target='_blank'
+                    className='mt-5 md:mt-0 flex-grow'>
                     <p key={id}>
                       <span className='block'>{title}</span>
                       <span
